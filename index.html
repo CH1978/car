@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>只是換個機油，結果修到懷疑人生</title>
+  <style>
+    body {
+      font-family: "Noto Sans TC", sans-serif;
+      background-color: #f3f4f6;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #1f2937;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    section {
+      background: #ffffff;
+      border-radius: 8px;
+      padding: 25px 30px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+    h1, h2, h3 {
+      color: #1f2937;
+      font-weight: 600;
+      margin-top: 0;
+    }
+    h1 {
+      font-size: 28px;
+      border-bottom: 3px solid #374151;
+      padding-bottom: 12px;
+      margin-bottom: 25px;
+    }
+    h2 {
+      font-size: 22px;
+      border-left: 6px solid #2563eb;
+      padding-left: 15px;
+      margin-bottom: 20px;
+      color: #2563eb;
+    }
+    p, ol {
+      font-size: 16px;
+      color: #374151;
+    }
+    ol {
+      padding-left: 20px;
+    }
+    .photo {
+      margin-top: 30px;
+      text-align: center;
+    }
+    .photo img {
+      width: 200px;
+      cursor: pointer;
+      transition: transform 0.3s;
+      border-radius: 4px;
+    }
+    .photo img:hover {
+      transform: scale(1.05);
+    }
+    .photo-full {
+      display: none;
+      max-width: 100%;
+      margin-top: 20px;
+      border-radius: 6px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      cursor: pointer;
+    }
+    .link-section {
+      background: #e0e7ff;
+      padding: 20px 30px;
+      border-radius: 8px;
+      margin-bottom: 40px;
+      box-shadow: 0 0 10px rgba(37, 99, 235, 0.2);
+    }
+    .link-section h2 {
+      font-size: 20px;
+      color: #1e40af;
+      margin-top: 0;
+    }
+    .link-section a {
+      display: block;
+      margin: 10px 0;
+      color: #1e40af;
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    .link-section a:hover {
+      color: #1d4ed8;
+      text-decoration: underline;
+    }
+
+
+    .highlight {
+      background-color: #fff3cd;
+      border-left: 5px solid #ffc107;
+      padding: 0.5em 1em;
+      margin-bottom: 1em;
+    }
+    .callout {
+      background-color: #e9f7ef;
+      border-left: 5px solid #28a745;
+      padding: 0.5em 1em;
+      margin-bottom: 1em;
+    }
+    .warning {
+      background-color: #f8d7da;
+      border-left: 5px solid #dc3545;
+      padding: 0.5em 1em;
+      margin-bottom: 1em;
+    }
+
+------------------------------------
+      .photo {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .photo img {
+    cursor: pointer;
+    max-width: 200px;
+    transition: transform 0.3s;
+  }
+
+  /* 放大圖容器 */
+  #imageOverlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* 放大圖本體 */
+  #imageOverlay img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    box-shadow: 0 0 20px #000;
+  }
+
+----------------------------------------------------
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+      border: 1px solid #ccc;
+    }
+    td {
+      border: 1px solid #ccc;
+      padding: 15px;
+      font-size: 15px;
+      vertical-align: top;
+    }
+    td.image-cell {
+      width: 40%;
+      text-align: center;
+    }
+    td.image-cell img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+    td.text-cell {
+      width: 60%;
+      font-size: 15px;
+    }
+
+
+
+  </style>
+</head>
+
+-------------------------------------------------------------------
+
+<body>
+  <div class="container">
+ 
+
+    <h1>只是想換個機油，結果修到懷疑人生(旭益汽車保養新體驗)    </h1>
+ 
+ 
+
+       <section>
+      <h1>序：你是不是也遇過這樣的情境？</h1>
+       <p>
+<h2>
+        下班路上，車子開起來正常、沒聲音、沒異常，
+看著里程數差不多，心想：「週末順道進廠保養，換個機油就好，快狠準。」
+結果──
+幾個小時後，一通通電話、一連串專業名詞轟炸下來，
+你滿頭問號，只記得最後拿出卡刷了快 五位數，
+一邊簽名一邊想：「我到底修了什麼？」，懷疑人生懷疑人性。
+
+</h2>
+
+ <h3 style="color: #2c3e50;">遇到此情境必定經過這樣過程</h3>
+  <ul style="list-style-type: '✅ '; padding-left: 1.2em;">
+    
+    <li>本想做基本保養，一打開引擎蓋「問題像中獎一樣一個接一個」變成一場始料未及的「連環維修」</li>
+    <li>技師說得很嚴重，不修好像會爆炸（但又說「看你」）</li>
+    <li>當下怕麻煩、怕危險、怕後悔，就默默點頭說「好吧那就修吧」</li>
+    <li>回家一查才發現：「欸？這根本不急耶！別人價格也沒這麼高耶！」</li>
+    <li>接著陷入自責、懷疑人生……</li>
+    <li>再去詢問店家，店家跟你說我有問你喔?</li>
+    <li>客服滿意調查度調查填不滿意，沒人理你</li>
+  </ul>
+
+  <p>
+      <span style="font-size:20px; color:red;"> 
+  
+    下方就是我的故事
+    <br>
+    這是當過羊的省思
+  
+    </span>
+  </p>
+
+       
+       </p>
+
+       </section>
+
+
+
+    <section>
+   <h1>一整天從保養變成大維修連鎖反應！</h1>
+  <p>5月某個週末想說公里數超過了，回到 <span style="font-size:24px; color:red;">旭益汽車文新店</span>換個機油，結果卻變成一場從早上修到傍晚的
+    <span style="font-size:24px; color:red;">「多米諾式大維修」
+
+    </span>
+    ……
+  </p>
+ 
+  <p>
+最後總金額竟然是
+<span style="font-size:24px; color:red;">4萬</span>
+<span style="font-size:24px; color:#2c3e50;">到底發生甚麼事?</span>
+ </p>
+
+
+  <h2>🛠️ 1. 初步發現機油滲漏</h2>
+  <ul>
+    <li>技師打開引擎蓋，指出「機油有滲漏，表面明顯有油污」。</li>
+    <li>建議：「要整組汽門蓋與墊片一起換，費用約 13,000 元。」</li>
+    <li>我問：「可以只換墊片嗎？」</li>
+    <li>技師答：「這是一整組的，沒辦法分開換，可能塑膠老化，再加上你里程數差不多到了。」</li>
+  </ul>
+  <div class="highlight">
+    當下判斷：因為漏油的確肉眼可見，加上這家店是我一直來保養的，於是就決定同意更換。
+  </div>
+
+  <div>
+    Note:事後我上網查資料才知道其實「墊片是可以單換的」…  <br>
+    讓我開始意識到：即使常去的保養廠，
+    也不能完全相信，還是要留有懷疑與查證的空間！<br>
+
+    至於塑膠老化與里程數的確多數建議需要更換 
+
+<br>
+<br>
+  <div class="highlight">
+    談定後就把車留下回去家裡處理事情。
+  </div>
+
+<br> 
+<br>
+
+
+
+  </div>
+
+  <h2>🔁 2. 開啟連環「追加維修」流程</h2>
+  <p>⚠️ 維修還沒結束，一整天電話連環響起：</p>
+
+  <h3>📞 第一通：皮帶有問題</h3>
+  <ul>
+    <li>技師：「王先生，我們發現皮帶磨損跟你講。」</li>
+    <li>我問：「這樣會怎樣？」</li>
+    <li>技師：「可能斷掉導致無法行駛，但要不要換，看你。」</li>
+    <li>價格：2800 元</li>
+  </ul>
+  <div class="callout">
+    因為擔心安全問題，也怕日後後悔，咬牙同意更換。
+  </div>
+  <br>
+
+  <h3>📞 第二通：惰輪有問題</h3>
+  <ul>
+    <li>我問：「惰輪是什麼？怎樣的問題？」</li>
+    <li>技師：「磨損了，會影響整個帶動系統，但要不要換，看你。」</li>
+    <li>我問：「以你的建議是要換還是不要換？」</li>
+    <li>技師：「建議是要換」</li>
+  </ul>
+  <div class="callout">再次擔心影響行車安全，也就照辦。</div>
+
+  <br>
+  <h3>📞 第三通：惰輪固定有問題</h3>
+  <ul>
+    <li>技師：「惰輪固定處有問題。」</li>
+    <li>我問：「那這樣會怎樣？」</li>
+    <li>技師：「會影響整體穩定性，要不要換，看你。」</li>
+  </ul>
+  <div class="warning">無奈繼續點頭，感覺已經走上了「不修會不安、修了像肥羊」的路。</div>
+
+ <br> 
+  <h3>📞 第四通：馬達有問題</h3>
+  <ul>
+    <li>技師：「王先生想先聽好消息還是壞消息？」</li>
+    <li>我問：說吧</li>
+    <li>技師：「壞消息是你的發電馬達輪軸有問題；好消息是我們剛好有現貨。」</li>
+  </ul>
+  <div class="highlight">
+    我問：「那這樣會怎樣？」<br>
+    技師：「輪軸壞會飛出來，整台車就沒電、會當機，因為現在車都是靠電運作的。」
+  </div>
+  <p>👉 聽起來非常嚴重，內心雖然有疑問，但還是為了安全考量，再次同意更換。那天天色已晚，又急著去接小孩，來不及跟技師進一步討論，就先結帳回家。</p>
+
+  <p>
+    <span style="font-size:24px; color:red;"> 
+      一路上心裡總有種怪怪的感覺：車進到保養廠前，沒看到儀表板警示燈亮起，開起來很順也沒聽到怪聲音。
+      為什麼要換掉這麼多零件？
+    </span>
+    
+  </p>
+
+</section>
+
+<section>
+
+
+
+  <h1>📚 回家後查資料發現的不合理</h1>
+  <ul>
+    <li>其實這些項目都屬於「多楔皮帶（Serpentine Belt）＋發電機驅動系統」。</li>
+    <li>這些零件彼此相連，任何一環出問題，應該當下就能察覺。</li>
+  </ul>
+
+  <h3>問題❶ :發電機異常應該一開始就能發現</h3>
+  <ul>
+    <h4>一般假如電機有問題主要是下面其中一個現象</h4>
+    <li>其中01 02 很值觀</li>
+    <li>01:電池燈亮或閃爍</li>
+    <li>02:啟動無力、電力不足</li>
+    <li>03:聽診可聽見異音</li>
+
+    <h4>
+       <span style="font-size:20px; color:red;">
+        如技師說換馬達是因為異音?
+        那一開始就會有怎會換到最後才發生? 
+      </span>
+    </h4>
+    <h4>電話中只提軸有壞</h4>
+    
+    
+
+  </ul>
+
+  <h3>問題❷ 系統應該可同時檢查與決策卻被「分段發現」與「分段報價」</h3>
+  <h4>
+   <ul>
+    <span style="font-size:20px; color:red;"> 
+      整個皮帶系統應該可同時檢查與決策，而就整過程來看是逐項追加。
+</span>
+</ul>
+  </h4>
+
+
+  <h3>問題❸ 工時重疊卻重複計費</h3>
+    <h4>
+   <ul>
+    <span style="font-size:20px; color:red;"> 
+      整個皮帶系統應該同一區塊維修，卻被拆成多次工資收費。
+   </span>
+   </ul>
+   </h4>
+
+
+ <div class="highlight">
+  <h3>✅ 合理相較合理做法應該是：</h2>
+  <ul>
+    <li>一次檢測、一次決策</li>
+    <li>整組報價：皮帶＋張力器＋惰輪＋發電機打包報價</li>
+    <li>透明化溝通：異音錄音＋電壓數據呈現</li>
+</div>
+    
+  </ul>
+
+
+
+</section>  
+
+
+<section>
+
+<h1>「資訊不對等」與「情境壓力」對答 </h1>
+  <h2> 事後才會發現其實沒有這麼急迫 </h2>
+
+  <p>整整一天不斷接到電話，
+  每通都在詢問「要不要換」，
+  語氣委婉卻隱含風險，
+  讓人不敢說不換。
+
+  一次兩次還能冷靜思考，
+  第三通開始就已經失去判斷力，
+  只想趕快修完了事。
+
+  加上技師大都說：
+  「這個出問題就會很麻煩」
+  「換不換看你」
+  造成一種
+  「不換就是自己承擔後果」的心理壓力。
+
+  <div class="highlight">
+  <p>
+    這種溫水煮青蛙式的「分段報壞、分段決定」，
+    讓車主在資訊不對等的情況下，車主在時間壓力、
+    資訊落差和安全疑慮的夾擊下，
+    陷入“當場不修不安心、事後又懷疑被當肥羊”的矛盾狀態。 
+    <br>
+    <br>
+    <strong>
+      關於這樣的問題不是單單技師問題，更是覺得是整個公司教育體制問題。
+      為什麼是整個公司?後面回提到
+    </strong>
+
+    <br>
+      當事情不如你想這樣時想要理論時
+      技師都一定會說:
+       <span style="font-size:20px; color:red;"> 
+      我有問你啊!是你做決定啊!
+   </span>
+
+   <br>
+      
+    這句話表面上合理，想想實際對話中是不是大都是  
+
+            <span style="font-size:20px; color:red;"> 
+      「資訊不對等」與「情境壓力」
+   </span>
+      
+      <br>
+      <br>
+
+      一般消費者並不是專業技師，在毫無準備、
+      也無法即時比對資料的情況下，只能依賴這些技師的判斷。
+      所以問題不是「有沒有問」，而是有沒有提供足夠透明與完整的資訊，
+      讓客戶能理解選項、做出選擇。
+      <br>
+      加上技師往往跟客戶提的都是最糟狀況，
+      例如皮帶斷了會整個車子不動...
+      卻不是跟分析目前問題層度?讓客戶足夠可以判斷
+      或者回家做功課確認。約下次時間?
+      
+   <span style="font-size:15px; color:blue;"> 
+      初步猜測應該技師有業績獎金所以到手的肉誰先拿是誰的
+      下次不一定是我，能拿多少就拿多少?
+      這部分我不確定單單是猜測?
+      有從裡面離職的可以告知一下?
+      真的很好奇?
+    </span>
+    <br>  
+    <br>
+
+    <span style="font-size:20px; color:red;"> 
+      都已經跑來這裡保養不就是信賴嗎?
+      <strong>需要急著賺這一單</strong>
+      
+      
+    </span>
+
+</p>
+
+</div>
+
+<div>
+
+<br>
+
+<h2>至少應該做到下方才足以稱作真正做決定 </h2>
+<p>
+   <h3>技師不一定會這樣做，到手的肉怎麼可以讓牠飛了!</h3>
+
+   
+   <h3>
+    <span style="font-size:20px; color:red;"> 
+      技師不做那你要注意因為肉在你身上
+  </span>
+
+   </h3>
+
+</p>
+
+<h3>1. 事前檢測與完整說明</h3>
+<ul>
+  <li>使用專業儀器和聽診，完整檢測車況，確認問題、嚴重度與影響範圍。</li>
+  <li>透過影像、錄音、數據等輔助說明，讓客戶直觀了解狀況。</li>
+  
+</ul>
+
+<h3>2. 用淺顯易懂的語言解釋 (做很徹底)</h3>
+<ul>
+  <li>舉例說明問題嚴重性，如「皮帶如果斷裂，車子就無法行駛。」</li>
+</ul>
+
+<h3>3. 分清「必須立即維修」與「可延後處理」</h3>
+<ul>
+  <li>明確告知哪些是安全關鍵，必須馬上維修。</li>
+  <li>哪些可以觀察，暫時不必急著更換，避免增加客戶壓力。</li>
+</ul>
+
+<h3>4. 報價透明且可打包建議</h3>
+<ul>
+  <li>將相關零件打包報價，說明整組更換的好處與節省工時。</li>
+  <li>同時告知單項更換的差異與風險，尊重客戶選擇權。</li>
+  <li>材料與工資需要分開列 
+    <strong>(有法律規範目前網路可以查到)</strong>
+  
+    <br>
+    <br>
+
+   <li>   
+    資料來源於"網路查詢":細部內容需要的在自己去查
+   <br>
+    臺灣有法規要求商家在發票或收據上明細列示「貨物（材料）」與「勞務（工資）」的金額，主要依據有:
+
+<span style="font-size:15px; color:green;"> 
+      
+<br>    
+<br>《統一發票使用辦法》第 9 條
+<br> 規定開立統一發票時，應記載貨物或勞務的品名、數量、單價及金額。
+<br> 汽車維修屬於「技工修護勞務」，必須與材料費分列。
+<br>《消費者保護法》第 22 條
+<br> 服務提供者對消費者提供商品、勞務時，應於交易後提供「交易明細」；
+<br> 其中「交易項目及價格」必須清楚公開，讓消費者充分知情。
+<br>
+<br>
+<br>
+
+</span>
+
+</li>
+
+  </li>
+    
+
+</ul>
+
+<h3>5. 給予思考時間</h3>
+<ul>
+  <li>避免急迫要求客戶當場決定多項維修。</li>
+  <li>建議客戶可回去考慮，或尋求第二意見後再決定。</li>
+</ul>
+
+<h3>6. 同理心</h3>
+<ul>
+  <li>了解客戶非專業，可能有焦慮或疑慮。</li>
+
+</ul>
+
+
+</div>
+ 
+
+</section>
+
+<section>
+
+<h1>拆卸東西說公司要回收??</h3>
+<ul>
+  <li>
+   
+    當天技師跟我說馬達公司要回收??不過我是然堅持拿回也拿回
+    只是好奇公司為什麼要回收馬達??通常不是問說你這些東西要代為去還是我幫你處理??
+    不過經由這次經驗告訴我，除非你真的確認知道你再換什麼休什麼，不然一定帶回來。
+    因為有時當你有疑問時就會很好用。
+
+
+  </li>
+  
+</ul>
+
+  </section>
+
+
+
+<section>
+
+<h1>消費明細</h1>
+
+
+ <table>
+    <tr>
+      <td class="image-cell">
+        <div class="photo">
+         <p>維修現場照片：</p>
+  <img src="repair_thumb.jpg" alt="點擊查看大圖" onclick="document.getElementById('imageOverlay').style.display='flex'" />
+        </div>
+
+<!-- 放大圖容器 -->
+        <div id="imageOverlay" onclick="this.style.display='none'">
+  <img src="repair_thumb.jpg" alt="大圖">
+      </div>
+      </td>
+      <td class="text-cell">
+     
+<div style="display: flex; justify-content: center;">
+  <table border="1" cellspacing="0" cellpadding="8">
+    <thead>
+      <tr>
+        <th>項目名稱</th>
+        <th>報價單價格</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>ESCAPE 汽門蓋（附墊片）正廠</td><td>13,000</td></tr>
+      <tr><td>ESCAPE 發電機皮帶（原廠）</td><td>2,800</td></tr>
+      <tr><td>ESCAPE 冷氣惰輪調整總成</td><td>4,500</td></tr>
+      <tr><td>ESCAPE 冷氣惰輪固定</td><td>2,300</td></tr>
+      <tr><td>ESCAPE 發電機</td><td>9,500</td></tr>
+      <tr><td>發電機插頭 3P</td><td>500</td></tr>
+      <tr><td>火星塞鈦合金（4顆）</td><td>2,800</td></tr>
+      <tr><td>INSIDE 引擎油清洗油</td><td>1,688</td></tr>
+      <tr><td>引擎增強補漏奈米精</td><td>798</td></tr>
+      <tr><td>套餐機油 SPARK 5W40</td><td>2,480</td></tr>
+      <tr><td>方向盤油 CUMIC</td><td>999</td></tr>
+      <tr><td>賽車級剎車油 KYK</td><td>988</td></tr>
+      <tr><td>3M 化油清潔劑</td><td>176</td></tr>
+      <tr>
+        <td><strong>總金額</strong></td>
+        <td><strong>42,529</strong></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+      </td>
+    </tr>
+  </table>
+
+
+
+
+</section>
+
+
+<section>
+<h1>知越多、疑越多：不是多疑，而是開始看得懂</h1>
+ <table>
+    <tr>
+      <td class="image-cell">
+        <img src="collage01.jpg" alt="示意圖" />
+        <img src="collage02.jpg" alt="示意圖" />
+        <img src="collage03.jpg" alt="示意圖" />
+        <img src="collage04.jpg" alt="示意圖" />
+      </td>
+      <td class="text-cell">
+        
+        <h2>
+          經由資料尋找開始了解就會發現
+        </h2>  
+          <h3>
+          <br>
+          01 這些項目，其實可以一次檢查完給予完整建議。
+          <br>
+          <br>
+
+          02 元件老化磨損是有，不過並不需要當天立即決定。
+             可以回去考慮評更換。
+
+          <br>
+          <br>
+
+          03 這些都是同一區塊的關零件可以打包報價。
+             而非一個一個來報價。
+
+         <br>
+         <br>
+          04 告知問題順序怪怪 皮帶->調節器->固定器->馬達
+             因為馬達有聲音一開始就有怎會到最後
+
+          <br>
+          <br>
+
+          05 所有的現象應該要實際操作給客戶來看才對
+ 
+        <br>
+         <br>
+          
+
+        </h3>
+
+        
+        
+        <h2>什麼叫做立即問題</h2>
+        
+        <h3>何謂皮帶損壞?</h3>
+
+        <p>
+          最明顯的更換訊號:皮帶有裂痕或破損，或發出異響，就需要立即更換。
+          .......
+        </p>
+        
+
+<h3>何謂發電機故障?</h3>
+<p>
+問過許多技師與查網路資料最直觀大多說電壓不穩?
+馬達真的抖動厲害，大多電壓都開始有問題?
+
+<br>
+1.儀表電瓶故障燈號
+<br>
+車輛儀表上都有一個電瓶的故障燈號標示，當它亮起時，代表電力系統出現問題，
+這時候如不是電池故障導致，就是發電機故障造成，
+所剩的電瓶電力通常可維持30公里以上，
+此時要避免使用車輛的電器設備，
+一定公里數後車輛就會逐漸感覺加速無力最後熄火，因盡早進廠進行維修。
+  
+
+<br>
+2.燈光系統變暗
+<br>
+如果發電機產生故障，可能會發現車輛大燈或儀表燈光變得昏暗，
+也可能會造成電子配備操作上比平常更緩慢，如車窗、電動座椅等。
+
+<br>
+3.電瓶損壞
+<br>
+汽車發電機在啟動後，會對電瓶提供充電作用，正常電壓約在13.5v左右，
+電壓過高或過低太多都會對電瓶產生傷害，使其使用壽命大幅縮短使電瓶故障，
+可能就是發電機故障導致，更換電瓶時記得要請技師檢查發電機狀況，
+避免剛換好的電瓶沒多久又壞了。
+
+<br>
+4.引擎皮帶異音或橡膠異味
+<br>
+當發電機損壞導致軸心鬆動或卡死時，都會使皮帶產生輸出差，
+使發電機皮帶產生運轉皮帶異音或燒焦異味，此時建議盡快進廠請技師確認，
+是皮帶調整鬆動問題還是發電機故障所導致。
+
+<br>
+5.引擎室運轉異音
+<br>
+發電機內部軸承零件斷裂或磨損嚴重，在運轉時就可以產生嗚嗚嗚的聲音，
+此時就須進廠檢查，不然卡死可能導致皮帶斷裂引發其它周邊零件的損傷。
+
+<br>
+6.怠速時抖動嚴重
+<br>
+如果是皮帶導致可能是因為太鬆打滑，使得發電機向電瓶充電不足，
+從而造成電瓶電量不足影響其電瓶壽命，保養時因檢查皮帶鬆緊，
+避免導致電瓶、或發電機故障問題。
+
+<br>
+資料來源於
+https://www.oicar.cc/
+
+<h3>其他....就不再列都可以查的到</h3>
+
+        </p>
+
+      </td>
+    </tr>
+  </table>
+
+  
+</section>
+
+<section>
+<h1>到底要不要到旭益保養維修?</h1>
+
+    <section>
+        <h2>看個人~多提高警覺</h2>
+        <ul>
+            <li>
+                <h3>小型保養（如換機油）沒有啥大問題</h3>
+                這本就是消費者日常會遇到的項目，只要事前做些功課、
+                了解材料與工資行情，搭配理性的選擇與觀察。
+                <span style="font-size:17px; color:red;"> 
+                <br>建議同時尋找:其它地方換機油廠商，讓自己的口袋名單多一點。
+                </span>
+                <br>至少遇到問題時還可以多問，不會陷入兩難。
+                <br>多方資料才容易比對。
+                    
+            </li>
+            
+        </ul>
+    </section>
+
+    <section>
+        <h2>制度觀察</h2>
+
+        <h3>🚨 文心門店的爭議經驗</h3>
+        <ul>
+            <li>
+              這次在文心門店的維修經驗中，我感受到多項不合理的維修建議與說法，讓我懷疑：這真的是個別技師的判斷問題嗎？
+
+            </li>
+            <li>
+              經過整體觀察與比對後，我反而覺得這像是一種「整體性的訓練」結果——話術一致、
+              處理方式如出一品，
+              看起來像是內部有施行的推進模式或銷售流程。
+              
+
+            </li>
+        </ul>
+
+        <h3>  跨門市詢問拒絕 </h3>
+        <ul>
+          <li>因為對文心店的不完全相信，加上車子離開文心時那時跟技師還聽到某種聲音、一直覺得毛毛、
+              因此想找其他門市再度確認、同時再比對資訊。
+          </li>  
+          <li>錯愕的是，當我在太平門店詢問技術細節時，
+              維修主管去查車牌出知道我在在文心門店維修，
+              當場以不歡迎態度打斷我，
+              對我說我知道你在文心店維修的，並暗示我「不適合再來詢問」。強調流程都一樣?
+          </li>
+          <li><strong>
+               這種行為令人不禁聯想：
+               <br>
+               01:旭益內部是否有跨門店「分區」、「分幫」的文化？
+               一間門店接手過的顧客，其他門店便視為不應干涉？
+               有點特別
+            
+               <br>
+               02:"流程都一樣" 代表前面所講的經歷，每家都是這樣做?
+            
+               <br>
+               03:發覺濫用客戶資料!
+            
+               <br>
+               第一次 文心店被問:你之前消費上萬元會這樣詢問嗎?
+               <br>
+               第二次 太平店被告知:我知道你在文心店維修 拒絕詢問
+               <br>
+               <br>
+               完全超出一間專業維修廠該有的應對。
+               <br>
+               算是個小插曲
+               <br>
+              </strong>
+          </li>
+          <br>
+
+          <li>主管還沒出來擋前，技師針對我疑惑的地方的解答，至少讓我心中對車的不安放下來。依然感謝他</li>
+          
+        </ul>
+    </section>
+
+    <section>
+        <h2>「問卷制度」僅是表面？後續機制未見實質作為</h2>
+        <ul>
+            <li>雖然旭益系統提供售後問卷，我也針對文心經驗給予不滿意，但迄今無任何回覆。</li>
+            <li><span class="highlight">這讓人感受到，其「後續服務」僅為形式，缺乏實際回應與改善意願。</span></li>
+        </ul>
+
+</section>
+        
+<section>
+
+        <h1>✅ 給車主的建議</h1>
+        <ol>
+            <li><strong>從基礎保養中建立信任觀察</strong><br />
+                初次接觸可選擇小型保養項目，並從報價說明、項目檢查與接待態度中觀察廠商是否專業透明。
+                多比較幾家門店，才能累積判斷依據，避免長期被單一說法綁架。
+            </li>
+            <br>
+            <li><strong>面對高額維修，務必停看聽</strong><br />
+                一旦面臨需要拆換零件、金額高昂的情況，應 <strong>立刻停下詢問細節、記錄報價，再離場查證</strong>，
+                絕不因一時壓力就當場答應。寧可花時間再三確認，也不要急於求成而失去判斷空間。
+            </li>
+            <br>
+            <li><strong>資訊準備讓你更有底氣</strong><br />
+                平日累積知識與經驗，例如：了解常見零件壽命、市場工資行情、典型維修流程等，
+                會在需要決策時給你更多信心與準備。當你懂得越多，
+                越能分辨技師是在幫你排解問題，還是在推進銷售。
+            </li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>🔍 結語立場</h2>
+        <p>
+            本文非為情緒抒發，而是根據實際經驗，<strong>未來更專業、透明，並提醒顧客不要放棄自主判斷。</strong><br />
+            顧客不是越順從就能得到好服務，<strong>反而應以理性、清楚的態度，主動提問與查證，才能保障自己的權益與安全。</strong><br />
+            
+        </p>
+    </section>
+
+</section>      
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+  <script>
+  </script>
+</body>
+</html>
